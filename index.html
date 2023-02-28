@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Современный учебник JavaScript, ДЗ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" type="text/css"/>
+</head>
+<body>
+
+  <div class="container">
+
+
+    <div class="chapter">
+
+      <div>
+        <h1>Глава 2: Основы JavaScript</h1>
+      </div>
+
+      <div class="content">
+
+        <div class="blocks">
+
+          <div class="block">
+            <p>
+              <b>Основы JavaScript, глава 2.1</b>
+            </p>
+            <p>
+              <b>Возьмите решение предыдущей задачи Вызвать alert, и измените его. Извлеките содержимое скрипта во внешний файл alert.js, лежащий в той же папке.</b>
+            </p>
+            <div class="btn1">
+              <button class="btn" id="helloWorld">Привет, мир!</button>
+            </div>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Переменные, глава 2.4</b>
+            </p>
+            <p>let admin;<br/>let name = "Джон";</p>
+              <button class="btn" id="name">Admin name?</button>
+            <p>
+              Для имен констант заглавные буквы используются для <b>фиксированных</b> переменных, в остальных случаях используются строчные.<br/><br/>
+              <b>Верный ответ:</b><br/><br/>
+              const BIRTHDAY = '18.04.1982';<br/>
+              const age = someCode(BIRTHDAY);<br/>
+            </p>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Типы данных, глава 2.5</b>
+            </p>
+            <p>
+              <b>Что выведет этот скрипт?</b><br/><br/>
+                let name = "Ilya";<br/>
+                alert( `hello ${1}` ); // ?<br/>
+                alert( `hello ${"name"}` ); // ?<br/>
+                alert( `hello ${name}` ); // ?<br/>
+            </p>
+            <div class="btn2">
+              <button class="btn" id="hello1">Вывод 1</button>
+              <button class="btn" id="helloname">Вывод 2</button>
+              <button class="btn" id="helloname2">Вывод 3</button>
+            </div>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Взаимодействие: alert, prompt, confirm, глава 2.6</b>
+            </p>
+            <p>
+              <b>Создайте страницу, которая спрашивает имя у пользователя и выводит его.</b>
+            </p>
+            <div class="btn1">
+              <button class="btn" id="26">Ваше имя?</button>
+            </div>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Базовые операторы, математика, глава 2.8</b>
+            </p>
+            <p>
+              <b>Чему будут равны переменные a, b, c и d в примере ниже?</b><br/><br/>
+              let a = 1, b = 1;<br/>
+              let c = ++a; // ?<br/>
+              let d = b++; // ?
+              <br/>
+            </p>
+            <div class="btn2">
+              <button class="btn" id="a">a</button>
+              <button class="btn" id="b">b</button>
+              <button class="btn" id="c">c</button>
+              <button class="btn" id="d">d</button>
+            </div>
+            <br/>
+            <p>
+              <b>Чему будут равны переменные a и x после исполнения кода в примере ниже?</b><br/><br/>
+              let a = 2;<br/>
+              let x = 1 + (a *= 2);<br/>
+            </p>
+            <button class="btn" id="x">a и x</button>
+            <br/>
+            <p>
+              <b> Какой результат будет у выражений ниже?</b>
+            </p>
+            <button class="btn" id="answ">Код в файле JS</button>
+            <br/>
+            <p>
+              <b>Ниже приведён код, который запрашивает у пользователя два числа и показывает их сумму.
+              Он работает неправильно. Код в примере выводит 12 (для значения полей по умолчанию).
+              В чём ошибка? Исправьте её. Результат должен быть 3.</b><br/><br/>
+              let a = prompt("Первое число?", 1);<br/>
+              let b = prompt("Второе число?", 2);
+            </p>
+            <button class="btn" id="three">Теперь три</button>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Операторы сравнения, глава 2.9</b>
+            </p>
+            <p>
+              <b>Каким будет результат этих выражений?</b><br/><br/>
+              5 > 4<br/>
+              "ананас" > "яблоко"<br/>
+              "2" > "12"<br/>
+              undefined == null<br/>
+              undefined === null<br/>
+              null == "\n0\n"<br/>
+              null === +"\n0\n"
+            </p>
+            <button class="btn" id="comparsion">Узнать ответ</button>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Условное ветвление: if, '?', глава 2.10</b>
+            </p>
+            <div class="block1">
+              <div>
+                <p>
+                  <b>Выведется ли alert?</b><br/><br/>
+                  if ("0") {<br/>
+                    alert( 'Привет' );<br/>
+                  }<br/>
+                </p>
+                  <button class="btn" id="if">Узнать ответ</button>
+                  <p>
+                    <b>„Какое «официальное» название JavaScript?“</b>
+                  </p>
+                  <button class="btn" id="ecma">Какое «официальное» название JavaScript?</button>
+                  <p>
+                    <b>Используя конструкцию if..else, напишите код, который получает число через prompt, а затем выводит в alert:<br/><br/>
+                      1, если значение больше нуля,<br/>
+                      -1, если значение меньше нуля,<br/>
+                      0, если значение равно нулю.<br/><br/>
+                      Предполагается, что пользователь вводит только числа.</b>
+                  </p>
+                  <button class="btn" id="num">Введите число</button>
+              </div>
+              <div>
+                <p>
+                  <b>Перепишите конструкцию if с использованием условного оператора '?':</b><br/><br/>
+                  let result;<br/>
+                  if (a + b &lt 4) {<br/>
+                    result = 'Мало';<br/>
+                  } else {<br/>
+                    result = 'Много';<br/>
+                  }<br/>
+                </p>
+                <button class="btn" id="ter">Узнать ответ</button>
+                <p>
+                  <b>Перепишите if..else с использованием нескольких операторов '?'.</b><br/><br/>
+                  let message;<br/>
+                  if (login == 'Сотрудник') {<br/>
+                    message = 'Привет';<br/>
+                  } else if (login == 'Директор') {<br/>
+                    message = 'Здравствуйте';<br/>
+                  } else if (login == '') {<br/>
+                    message = 'Нет логина';<br/>
+                  } else {<br/>
+                    message = '';<br/>
+                  }
+                </p>
+                <button class="btn" id="ter2">Узнать ответ</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Логические операторы, глава 2.11</b>
+            </p>
+            <p>
+              Что выведет код ниже?<br/>
+              alert( null || 2 || undefined );<br/>
+              alert( alert(1) || 2 || alert(3) );<br/>
+              alert( 1 && null && 2 );<br/>
+              alert( alert(1) && alert(2) );<br/>
+              alert( null || 2 && 3 || 4 );<br/>
+            </p>
+            <button class="btn" id="code">Узнать ответ</button>
+            <p>
+              <b>Напишите условие if для проверки, что переменная age находится (НЕ находится) в диапазоне между 14 и 90 включительно.</b>
+            </p>
+            <button class="btn" id="code2">Узнать ответ</button>
+            <p>
+              <b>Какие конкретно значения будут результатами выражений в условиях if(...)?</b><br/><br/>
+              if (-1 || 0) alert( 'first' );<br/>
+              if (-1 && 0) alert( 'second' );<br/>
+              if (null || -1 && 1) alert( 'third' );
+            </p>
+            <button class="btn" id="code3">Узнать ответ</button>
+            <p>
+              <b>
+                Напишите код, который будет спрашивать логин с помощью prompt.<br/>
+                Если посетитель вводит «Админ», то prompt запрашивает пароль, если ничего не введено или нажата клавиша Esc – показать «Отменено», в противном случае отобразить «Я вас не знаю».<br/>
+                Пароль проверять так:<br/>
+                Если введён пароль «Я главный», то выводить «Здравствуйте!»,<br/>
+                Иначе – «Неверный пароль»,<br/>
+                При отмене – «Отменено».
+              </b>
+            </p>
+            <button class="btn" id="code4">Войти в систему</button>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Циклы while и for, глава 2.13</b>
+            </p>
+            <div class="block1">
+              <div>
+                <p>
+                  Какое последнее значение выведет этот код? Почему?<br/>
+                  let i = 3;<br/>
+                  while (i) {<br/>
+                    alert( i-- );<br/>
+                  }
+                </p>
+                <button class="btn" id="code25">Узнать ответ</button>
+                <p>
+                  <b>
+                    Для каждого цикла запишите, какие значения он выведет. Потом сравните с ответом.<br/>
+                    Оба цикла выводят alert с одинаковыми значениями или нет?
+                  </b><br/><br/>
+                  let i = 0;<br/>
+                  while (++i &lt 5) alert( i );<br/>
+                  let i = 0;<br/>
+                  while (i++ &lt 5) alert( i );<br/>
+                </p>
+                <button class="btn" id="code26">Пост</button>
+                <button class="btn" id="code27">Пре</button>
+                <p>
+                  Ответ разный так как работа префикса и постфикса различна, один сначала делает, потом думает, второй же наоборот - сначала думает, потом делает.
+                </p>
+                <p>
+                  <b>
+                    При помощи цикла for выведите чётные числа от 2 до 10.
+                  </b>
+                </p>
+                <button class="btn" id="code28">Узнать ответ</button>
+              </div>
+              <div>
+                <p>
+                  <b>
+                    Перепишите код, заменив цикл for на while, без изменения поведения цикла.
+                  </b><br/><br/>
+                  for (let i = 0; i &lt 3; i++) {<br/>
+                    alert( `number ${i}!` );<br/>
+                  }<br/>
+                  Решение<br/>
+                  let i = 0;<br/>
+                  while (i &lt 3) {<br/>
+                    alert( `number ${i}!` );<br/>
+                    i++;<br/>
+                  }
+                </p>
+                <p>
+                  <b>
+                    Напишите цикл, который предлагает prompt ввести число, большее 100. Если посетитель ввёл другое число – попросить ввести ещё раз, и так далее. Цикл должен спрашивать число пока либо посетитель не введёт число, большее 100, либо не нажмёт кнопку Отмена (ESC).
+                  </b>
+                </p>
+                <button class="btn" id="code29">Поиграть с ответом</button>
+                <p>
+                  <b>
+                    Напишите код, который выводит все простые числа из интервала от 2 до n.
+                  </b>
+                </p>
+                <button class="btn" id="code30">Смотреть решение</button>
+              </div>
+            </div>           
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Конструкция "switch", глава 2.14</b>
+            </p>
+            <div class="block1">
+              <div>
+                <p>
+                  <b>
+                    Напишите if..else, соответствующий следующему switch:
+                  </b><br/><br/>
+                  switch (browser) {<br/>
+                    case 'Edge':<br/>
+                      alert( "You've got the Edge!" );<br/>
+                      break;<br/>
+    
+                    case 'Chrome':<br/>
+                    case 'Firefox':<br/>
+                    case 'Safari':<br/>
+                    case 'Opera':<br/>
+                      alert( 'Okay we support these browsers too' );<br/>
+                      break;<br/>
+    
+                    default:<br/>
+                      alert( 'We hope that this page looks ok!' );<br/>
+                  }
+                </p>
+                <p>
+                  <b>Решение:</b><br/><br/>
+                  if(browser == 'Edge') {<br/>
+                    alert("You've got the Edge!");<br/>
+                  } else if (browser == 'Chrome'<br/>
+                    || browser == 'Firefox'<br/>
+                    || browser == 'Safari'<br/>
+                    || browser == 'Opera') {<br/>
+                    alert( 'Okay we support these browsers too' );<br/>
+                  } else {<br/>
+                    alert( 'We hope that this page looks ok!' );<br/>
+                  }
+                </p>
+              </div>
+              <div>
+                <p>
+                  <b>Перепишите код с использованием одной конструкции switch:</b><br/><br/>
+                  const number = +prompt('Введите число между 0 и 3', '');<br/>
+                  if (number === 0) {<br/>
+                    alert('Вы ввели число 0');<br/>
+                  }<br/>
+                  if (number === 1) {<br/>
+                    alert('Вы ввели число 1');<br/>
+                  }<br/>
+                  if (number === 2 || number === 3) {<br/>
+                    alert('Вы ввели число 2, а может и 3');<br/>
+                  }<br/>
+                </p>
+                <p>
+                  <b>Решение:</b><br/><br/>
+                  const number = +prompt('Введите число между 0 и 3', '');<br/>
+                  switch (number) {<br/>
+                  case 0:<br/>
+                    alert('Вы ввели число 0');<br/>
+                    break;<br/>
+                  case 1:<br/>
+                    alert('Вы ввели число 1');<br/>
+                    break;<br/>
+                  case 2:<br/>
+                  case 3:<br/>
+                    alert('Вы ввели число 2, а может и 3');<br/>
+                    break;<br/>
+                  }
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Функции, глава 2.15</b>
+            </p>
+            <div class="block1">
+              <div>
+                <p>
+                  <b>
+                    Следующая функция возвращает true, если параметр age больше 18.
+                  </b><br/><br/>
+                  В ином случае она запрашивает подтверждение через confirm и возвращает его результат:<br/>
+                  function checkAge(age) {<br/>
+                    if (age > 18) {<br/>
+                      return true;<br/>
+                    } else {<br/>
+                      // ...<br/>
+                      return confirm('Родители разрешили?');<br/>
+                    }<br/>
+                  }<br/><br/>
+                  Будет ли эта функция работать как-то иначе, если убрать else?
+                </p>
+                <p>
+                  <b>Функции будут работать идентично</b>
+                </p>
+                <p>
+                  <b>Перепишите функцию, используя оператор '?' или '||'</b>
+                </p>
+                <p>
+                  <b>Решение:</b><br/><br/>
+                  return (age > 18) ? true : confirm('Родители разрешили?');
+                </p>
+              </div>
+              <div>
+                <p>
+                  <b>Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b.</b>
+                </p>
+                <p>
+                  <b>Решение:</b><br/><br/>
+                    function min(a, b) {<br/>
+                      return a < b ? a : b;<br/>
+                    }<br/>
+                </p>
+                <p>
+                  <b>Напишите функцию pow(x,n), которая возводит x в степень n и возвращает результат.</b>
+                </p>
+                <p>
+                  <b>Решение:</b><br/><br/>
+                  return (age > 18) ? true : confirm('Родители разрешили?');
+                </p>
+                <p><b>Напишите функцию pow(x,n), которая возводит x в степень n и возвращает результат.</b></p>
+                <button class="btn" id="code31">Смотреть решение</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Стрелочные функции, основы, глава 2.17</b>
+            </p>
+            <div class="block1">
+              <div>
+                <p>
+                  <b>Замените код Function Expression стрелочной функцией:</b><br/><br/>
+                    function ask(question, yes, no) {<br/>
+                      if (confirm(question)) yes()<br/>
+                      else no();<br/>
+                    }<br/><br/>
+                    ask(<br/>
+                      "Вы согласны?",<br/>
+                      function() { alert("Вы согласились."); },<br/>
+                      function() { alert("Вы отменили выполнение.");<br/>
+                    );
+                </p>
+              </div>
+              <div>
+                <p><b>Решение:</b><br/><br/>
+                  const ask = (question, yes, no) => {<br/>
+                    if (confirm(question)) yes()<br/>
+                    else no();<br/>
+                  }<br/><br/>
+                  
+                  ask(<br/>
+                    "Вы согласны?",<br/>
+                    () => alert("Вы согласились."),<br/>
+                    () => alert("Вы отменили выполнение.")<br/>
+                  );
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="chapter">
+
+      <div>
+        <h1>Глава 3: Качество кода</h1>
+      </div>
+
+      <div class="content">
+
+        <div class="blocks">
+
+          <div class="block">
+            <p>
+              <b>Советы по стилю кода, глава 3.2</b>
+            </p>
+            <p>
+              <b>Какие недостатки вы видите в стиле написания кода этого примера?</b><br/><br/>
+              function pow<b>(x,n)</b><br/>
+              <b>{</b><br/>
+                  let <b>result=1</b>;<br/>
+                  for<b>(let i=0;i меньше n;i++) {result*=x;}</b><br/>
+                  return result;<br/>
+                }<br/>
+
+                let <b>x=prompt("x?",'')</b>, <b>n=prompt("n?",'')</b><br/>
+                if (n меньше <b>=0</b>)<br/>
+                {<br/>
+                  <b>alert(`Степень ${n} не поддерживается, введите целую степень, большую 0`);</b><br/>
+                }<br/>
+                else<br/>
+                <b>{</b><br/>
+                  alert(pow(<b>x,n</b>))<br/>
+                }<br/>
+            </p>
+            <p>
+              Отсутствие пробелов, перенос строк не в нужных местах, длинные строки.
+            </p>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Автоматическое тестирование c использованием фреймворка Mocha, глава 3.5</b>
+            </p>
+            <p>
+              <b>Что не так в нижеприведённом тесте функции pow?</b><br/><br/>
+                it("Возводит x в степень n", function() {<br/>
+                  let x = 5;<br/>
+                  let result = x;<br/>
+                  assert.equal(pow(x, 1), result);<br/>
+                  result *= x;<br/>
+                  assert.equal(pow(x, 2), result);<br/>
+                  result *= x;<br/>
+                  assert.equal(pow(x, 3), result);<br/>
+                });
+            </p>
+            <p>
+              Одна задача - одна функция, в примере все слишком загружено, нужно разделить.
+            </p>
+          </div>
+
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="chapter">
+
+      <div>
+        <h1>Глава 4: Объекты: основы</h1>
+      </div>
+
+      <div class="content">
+
+        <div class="blocks">
+
+          <div class="block">
+            <p>
+              <b>Объекты, глава 4.1</b>
+            </p>
+            <div class="block1">
+              <div>
+                <p>
+                  <b>Напишите код, выполнив задание из каждого пункта отдельной строкой:</b><br/><br/>
+                    Создайте пустой объект user.<br/>
+                    Добавьте свойство name со значением John.<br/>
+                    Добавьте свойство surname со значением Smith.<br/>
+                    Измените значение свойства name на Pete.<br/>
+                    Удалите свойство name из объекта.<br/>
+                </p>
+                <p>
+                  <b>Решение:</b><br/><br/>
+                  let user = {};<br/>
+                  user.name = "John";<br/>
+                  user.surname = "Smith";<br/>
+                  user.name = "Pete";<br/>
+                  delete user.name;<br/>
+                </p>
+                <p>
+                  <b>Напишите функцию isEmpty(obj), которая возвращает true, если у объекта нет свойств, иначе false.
+                    Должно работать так:</b><br/><br/>
+                    let schedule = {};<br/>
+                    alert( isEmpty(schedule) ); // true<br/>
+                    schedule["8:30"] = "get up";<br/>
+                    alert( isEmpty(schedule) ); // false<br/>
+                </p>
+                <button class="btn" id="code32">Смотреть решение</button>
+              </div>
+              <div>
+                <p>
+                  <b>Можно ли изменить объект, объявленный с помощью const? Как вы думаете?</b><br/>
+                </p>
+                <p>Нельзя изменить переменную, а объект заменяется без труда</p><br/><br/>
+                <p>
+                  <b>У нас есть объект, в котором хранятся зарплаты нашей команды, напишите код для суммирования всех зарплат и сохраните результат в переменной sum.</b>
+                </p>
+                <button class="btn" id="code33">Смотреть решение</button>
+                <p>
+                  <b>Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2.</b>
+                </p>
+                <p>
+                  <b>Решение:</b><br/><br/>
+                  function multiplyNumeric(obj) {<br/>
+                    for (let key in obj) {<br/>
+                      if (typeof obj[key] == 'number') {<br/>
+                        obj[key] *= 2;<br/>
+                      }<br/>
+                    }<br/>
+                  }<br/>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Методы объекта, "this", глава 4.4</b>
+            </p>
+            <div class="block1">
+              <div>
+                <p>
+                  <b>Здесь функция makeUser возвращает объект. Каким будет результат при обращении к свойству объекта ref?</b><br/><br/>
+                  function makeUser() {<br/>
+                    return {<br/>
+                      name: "John",<br/>
+                      ref: this<br/>
+                    };<br/>
+                  }<br/>
+                  let user = makeUser();<br/>
+                  alert( user.ref.name );
+                </p>
+                <button class="btn" id="code34">Смотреть решение</button>
+                <p>
+                  <b>Создайте объект calculator (калькулятор) с тремя методами:</b><br/><br/>
+                    read() (читать) запрашивает два значения и сохраняет их как свойства объекта.<br/>
+                    sum() (суммировать) возвращает сумму сохранённых значений.<br/>
+                    mul() (умножить) перемножает сохранённые значения и возвращает результат.
+                </p>
+                <button class="btn" id="code35">Давай покалькулируем</button>
+              </div>
+              <div>
+                <p>
+                  <b>У нас есть объект ladder (лестница), который позволяет подниматься и спускаться.<br/>
+                    Теперь, если нам нужно выполнить несколько последовательных вызовов, мы можем сделать это так:</b><br/><br/>
+                    ladder.up();<br/>
+                    ladder.up();<br/>
+                    ladder.down();<br/>
+                    ladder.showStep(); // 1<br/>
+                    ladder.down();<br/>
+                    ladder.showStep(); // 0<br/><br/>
+                    Измените код методов up, down и showStep таким образом, чтобы их вызов можно было сделать по цепочке, например так:<br/><br/>
+                    ladder.up().up().down().showStep().down().showStep(); // показывает 1 затем 0
+                </p>
+                <p>
+                  <b>Решение:</b><br/><br/>
+                  let ladder = {<br/>
+                    step: 0,<br/>
+                    up() {<br/>
+                      this.step++;<br/>
+                      return this;<br/>
+                    },<br/>
+                    down() {<br/>
+                      this.step--;<br/>
+                      return this;<br/>
+                    },<br/>
+                    showStep() {<br/>
+                      alert( this.step );<br/>
+                      return this;<br/>
+                    }<br/>
+                  };<br/>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Конструктор, оператор "new" 4.5</b>
+            </p>
+              <p>
+                <b>Возможно ли создать функции A и B, чтобы new A() == new B()?</b><br/>
+              </p>
+              <button class="btn" id="code36">Смотреть решение</button>
+              <p>
+                <b>Создайте функцию-конструктор Calculator, которая создаёт объекты с тремя методами:</b><br/><br/>
+                  read() запрашивает два значения при помощи prompt и сохраняет их значение в свойствах объекта.<br/>
+                  sum() возвращает сумму этих свойств.<br/>
+                  mul() возвращает произведение этих свойств.
+              </p>
+              <button class="btn" id="code37">Смотреть решение</button>
+              <p>
+                <b>Создайте функцию-конструктор Accumulator(startingValue).</b><br/><br/>
+                Объект, который она создаёт, должен уметь следующее:<br/>
+                Хранить «текущее значение» в свойстве value. Начальное значение устанавливается в аргументе конструктора startingValue.<br/>
+                Метод read() должен использовать prompt для считывания нового числа и прибавления его к value.
+              </p>
+              <button class="btn" id="code38">Смотреть решение</button>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="chapter">
+
+      <div>
+        <h1>Глава 5: Типы данных</h1>
+      </div>
+
+      <div class="content">
+
+        <div class="blocks">
+
+          <div class="block">
+            <p>
+              <b>Методы примитивов, глава 5.1</b>
+            </p>
+            <p>
+              <b>Взгляните на следующий код:</b><br/><br/>
+              let str = "Привет";<br/>
+              str.test = 5;<br/>
+              alert(str.test);<br/>
+            </p>
+            <p>
+              <b>Что выведется на экран?</b><br/><br/>
+              <button class="btn" id="code39">Узнать ответ</button>
+            </p>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Числа, глава 5.2</b>
+            </p>
+            <p>
+              <b>Создайте скрипт, который запрашивает ввод двух чисел (используйте prompt) и после показывает их сумму.</b><br/>
+                P.S. Есть «подводный камень» при работе с типами.
+            </p>
+            <button class="btn" id="code40">Нужен + перед prompt</button>
+            <p>
+              <b>Как правильно округлить 6.35?</b>
+            </p>
+            <p>
+              <b>Ответ:</b><br/><br/>
+              alert( Math.round(6.35 * 10) / 10 );
+            </p>
+            <p>
+              <b>Создайте функцию readNumber, которая будет запрашивать ввод числового значения до тех пор, пока посетитель его не введёт.  Функция должна возвращать числовое значение. Также надо разрешить пользователю остановить процесс ввода, отправив пустую строку или нажав «Отмена». В этом случае функция должна вернуть null.</b>
+            </p>
+            <button class="btn" id="code41">Смотреть работу функции</button>
+            <p>
+              <b>Этот цикл – бесконечный. Он никогда не завершится, почему?</b><br/><br/>
+              let i = 0;<br/>
+              while (i != 10) {<br/>
+                i += 0.2;<br/>
+              }
+            </p>
+            <p>
+              <b>Ответ:</b>
+              Ошибка при работе с дробями, как и в примере про округление.
+            </p>
+            <p>
+              <b>Напишите функцию random(min, max), которая генерирует случайное число с плавающей точкой от min до max (но не включая max).</b>
+            </p>
+            <p>
+              const random = (min, max) => {return Math.random() * (max - min) + min;}
+            </p>
+            <p>
+              <b>Напишите функцию randomInteger(min, max), которая генерирует случайное целое (integer) число от min до max (включительно).</b>
+            </p>
+            <p>
+              const random = (min, max) => {<br/>
+                  min = Math.ceil(min);<br/>
+                  max = Math.floor(max);<br/>
+                  return Math.floor(Math.random() * (max - min + 1)) + min;<br/>
+              }
+            </p>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Строки, глава 5.3</b>
+            </p>
+            <p>
+              <b>Напишите функцию ucFirst(str), возвращающую строку str с заглавным первым символом.</b><br/>
+            </p>
+            <p>
+              const ucFirst = (str) => {<br/>
+                return str[0].toUpperCase() + str.slice(1);<br/>
+              }<br/>
+            </p>
+            <p>
+              <b>Напишите функцию checkSpam(str), возвращающую true, если str содержит 'viagra' или 'XXX', а иначе false.</b>
+            </p>
+            <p>
+              const checkSpam = (str) => {<br/>
+                let lowerStr = str.toLowerCase();<br/>
+                (lowerStr.includes('viagra') || lowerStr.includes('xxx')) ? true : false<br/>
+                return lowerStr.includes('viagra') || lowerStr.includes('xxx');<br/>
+              }
+            </p>
+            <p>
+              <b>Создайте функцию truncate(str, maxlength), которая проверяет длину строки str и, если она превосходит maxlength, заменяет конец str на "…", так, чтобы её длина стала равна maxlength.</b>
+            </p>
+            <p>
+              const truncate = (str, maxlength) => {<br/>
+                return (str.length > maxlength) ?<br/>
+                  str.slice(0, maxlength - 1) + '…' : str;<br/>
+              }
+            </p>
+            <p>
+              <b>Есть стоимость в виде строки "$120". То есть сначала идёт знак валюты, а затем – число. Создайте функцию extractCurrencyValue(str), которая будет из такой строки выделять числовое значение и возвращать его.</b>
+            </p>
+            <p>
+              const extractCurrencyValue = (str) => {<br/>
+                return +str.slice(1);<br/>
+              }
+            </p>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Массивы, глава 5.4</b>
+            </p>
+            <div class="block1">
+              <div>
+                <p>
+                  <b>Что выведет следующий код?</b><br/><br/>
+                  let fruits = ["Яблоки", "Груша", "Апельсин"];
+                  let shoppingCart = fruits;
+                  shoppingCart.push("Банан");
+    
+                  alert( fruits.length );
+                </p>
+                <button class="btn" id="code42">Узнать ответ</button>
+                <ol>
+                  <p><b>Давайте произведём 5 операций с массивом.</b></p>
+                  <li>Создайте массив styles с элементами «Джаз» и «Блюз».</li>
+                  <li>Добавьте «Рок-н-ролл» в конец.</li>
+                  <li>Замените значение в середине на «Классика». Ваш код для поиска значения в середине должен работать для массивов с любой длиной.</li>
+                  <li>Удалите первый элемент массива и покажите его.</li>
+                  <li>Вставьте Рэп и Регги в начало массива.</li>
+                </ol>
+                <br/>
+                <ol>
+                  <li>let styles = ["Джаз", "Блюз"];</li>
+                  <li>styles.push("Рок-н-ролл");</li>
+                  <li>styles[Math.floor((styles.length - 1) / 2)] = "Классика";</li>
+                  <li>alert( styles.shift() );</li>
+                  <li>styles.unshift("Рэп", "Регги");</li>
+                </ol>
+                <br/><br/>
+                <p>
+                  <b>Каков результат? Почему?</b><br/><br/>
+                  let arr = ["a", "b"];<br/>
+                  arr.push(function() {<br/>
+                    alert( this );<br/>
+                  });<br/>
+                  arr[2]();
+                </p>
+                <p>
+                  <b>a,b,function(){alert( this )}</b>
+                  Вызывается массив, в конец добавляется функция 
+                </p>
+              </div>
+              <div>
+                <p>
+                  <b>Напишите функцию sumInput(), которая:</b>
+                </p>
+                <ul>
+                  <li>Просит пользователя ввести значения, используя prompt и сохраняет их в массив.</li>
+                  <li>Заканчивает запрашивать значения, когда пользователь введёт не числовое значение, пустую строку или нажмёт «Отмена».</li>
+                  <li>Подсчитывает и возвращает сумму элементов массива.</li>
+                </ul>
+                <br>
+                <button class="btn" id="code43">Узнать ответ</button>
+                <p>
+                  <b>На входе массив чисел, например: arr = [1, -2, 3, 4, -9, 6]. Задача: найти непрерывный подмассив в arr, сумма элементов в котором максимальна. Функция getMaxSubSum(arr) должна возвращать эту сумму.</b>
+                </p>
+                <p>
+                  function getMaxSubSum(arr){<br/>
+                    let sum = 0;<br/>
+                    let max = 0;<br/>
+                    for(let i=0; &lt arr.length;i++){<br/>
+                        for(let p=i;p &lt arr.length;p++){<br/>
+                            sum += arr[p];<br/>
+                            if(sum &lt 0){<br/>
+                                continue;<br/>
+                            }else if(sum > max){<br/>
+                                max = sum;<br/>
+                            }<br/>
+                        }<br/>
+                        sum = 0;<br/>
+                    }<br/>
+                    return (max > 0)? max: -1;<br/>
+                }
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Методы массивов, глава 5.5</b>
+            </p>
+            <div class="block1">
+              <div>
+                <p>
+                  <b>Напишите функцию camelize(str), которая преобразует строки вида «my-short-string» в «myShortString».</b><br/>
+                </p>
+                <p>
+                  const camelize = (str) => {<br/>
+                    return str.split('-')<br/>
+                      .map((elem, index) =><br/>
+                      index == 0 ? elem : elem[0].toUpperCase() + elem.slice(1))<br/>
+                      .join('');<br/>
+                  }
+                </p>
+                <p>
+                  <b>Напишите функцию filterRange(arr, a, b), которая принимает массив arr, ищет элементы со значениями больше или равными a и меньше или равными b и возвращает результат в виде массива. Функция должна возвращать новый массив и не изменять исходный.</b>
+                </p>
+                <p>
+                  const filterRange = (arr, a, b) => {<br/>
+                    return arr.filter(item => (a &lt= item && item &lt= b));<br/>
+                  }
+                </p>
+                <p>
+                  <b>Напишите функцию filterRangeInPlace(arr, a, b), которая принимает массив arr и удаляет из него все значения кроме тех, которые находятся между a и b. То есть, проверка имеет вид a ≤ arr[i] ≤ b. Функция должна изменять принимаемый массив и ничего не возвращать.</b>
+                </p>
+                <p>
+                  const filterRangeInPlace = (arr, a, b) => {
+                    for (let i = 0; i &lt arr.length; i++) {
+                      let val = arr[i];
+                      if (val &lt a || val > b) {
+                        arr.splice(i, 1);
+                        i--;}}}
+                </p>
+                <p>
+                  <b>Сортировать в порядке по убыванию</b>
+                </p>
+                <p>arr.sort((a, b) => b - a);</p>
+                <p>
+                  <b>У нас есть массив строк arr. Нужно получить отсортированную копию, но оставить arr неизменённым.</b>
+                </p>
+                <p>function copySorted(arr) {<br/>
+                  return arr.slice().sort();}
+                </p>
+                <p>
+                  <b>Создайте функцию конструктор Calculator, которая создаёт «расширяемые» объекты калькулятора.</b>
+                  Задание состоит из двух частей.
+                  Во-первых, реализуйте метод calculate(str), который принимает строку типа "1 + 2" в формате «ЧИСЛО оператор ЧИСЛО» (разделено пробелами) и возвращает результат. Метод должен понимать плюс + и минус -.
+                  Затем добавьте метод addMethod(name, func), который добавляет в калькулятор новые операции. Он принимает оператор name и функцию с двумя аргументами func(a,b), которая описывает его.
+                </p>
+                <p>
+                  function Calculator() {<br/>
+                    this.methods = {<br/>
+                      "-": (a, b) => a - b,<br/>
+                      "+": (a, b) => a + b<br/>
+                    };<br/>
+                    this.calculate = function(str) {<br/>
+                      let split = str.split(' '),<br/>
+                        a = +split[0],<br/>
+                        op = split[1],<br/>
+                        b = +split[2]<br/>
+                      if (!this.methods[op] || isNaN(a) || isNaN(b)) {<br/>
+                        return NaN;<br/>
+                      }<br/>
+                      return this.methods[op](a, b);<br/>
+                    }<br/>
+                    this.addMethod = function(name, func) {<br/>
+                      this.methods[name] = func;<br/>};}
+                </p>
+              </div>
+              <div>
+                <p>
+                  <b>У вас есть массив объектов user, и в каждом из них есть user.name. Напишите код, который преобразует их в массив имён.</b>
+                </p>
+                <p>let names = users.map(elem => elem.name);</p>
+                <p>
+                  <b>У вас есть массив объектов user, и у каждого из объектов есть name, surname и id. Напишите код, который создаст ещё один массив объектов с параметрами id и fullName, где fullName – состоит из name и surname.</b>
+                </p>
+                <p>let usersMapped = users.map(user => ({<br/>
+                  fullName: `${user.name} ${user.surname}`,<br/>
+                  id: user.id}));</p>
+                  <p>
+                    <b>Напишите функцию sortByAge(users), которая принимает массив объектов со свойством age и сортирует их по нему.</b>
+                  </p>
+                  <p>function sortByAge(arr) {<br/>
+                    arr.sort((a, b) => a.age > b.age ? 1 : -1);}
+                  </p>
+                  <p>
+                    <b>Напишите функцию shuffle(array), которая перемешивает (переупорядочивает случайным образом) элементы массива.</b>
+                  </p>
+                  <p>
+                    function shuffle(array) {<br/>
+                      for (let i = array.length - 1; i > 0; i--) {<br/>
+                        let j = Math.floor(Math.random() * (i + 1));<br/>
+                        [array[i], array[j]] = [array[j], array[i]];<br/>
+                      }<br/>
+                    }             
+                  </p>
+                  <p>
+                    <b>Напишите функцию getAverageAge(users), которая принимает массив объектов со свойством age и возвращает средний возраст.</b>
+                  </p>
+                  <p>
+                    function getAverageAge(users) {<br/>
+                      return users.reduce((prev, user) => prev + user.age, 0) / users.length;<br/>
+                    }
+                  </p>
+                  <p>
+                    <b>Пусть arr – массив строк. Напишите функцию unique(arr), которая возвращает массив, содержащий только уникальные элементы arr.</b>
+                  </p>
+                  <p>
+                    function unique(arr) {<br/>
+                      let n = arr.length, k = 0, newarr = [];<br/>
+                      for (let i = 0; i &lt n; i++) <br/>
+                      { let j = 0;<br/>
+                        while (j &lt k && newarr[j] !== arr[ i ]) j++;<br/>
+                        if (j == k) newarr[k++] = arr[ i ];<br/>
+                      }<br/>
+                      return newarr;<br/>
+                  }
+                  </p>
+                  <button class="btn" id="code44">Смотреть работу функции</button>
+                  <p>
+                    <b>Допустим, мы получили массив пользователей в виде {id:..., name:..., age:... }. Создайте функцию groupById(arr), которая создаст из него объект с id в качестве ключа и элементами массива в качестве значений.</b>
+                  </p>
+                  <p>
+                    const groupById = (array) => {<br/>
+                      return array.reduce((obj, value) => {<br/>
+                        obj[value.id] = value;<br/>
+                        return obj;<br/>
+                      }, {})<br/>
+                    }
+                  </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Map и Set, глава 5.7</b>
+            </p>
+            <p>
+              <b>Допустим, у нас есть массив arr. Создайте функцию unique(arr), которая вернёт массив уникальных, не повторяющихся значений массива arr.</b><br/>
+            </p>
+            <p>
+              const unique = (arr) => {<br/>
+                return Array.from(new Set(arr));<br/>
+              }
+            </p>
+            <p>
+              <b>Напишите функцию aclean(arr), которая возвращает массив слов, очищенный от анаграмм.</b>
+            </p>
+            <p>
+              const aclean = (arr) => {<br/>
+                let obj = {};<br/>
+                for (let i = 0; i &lt arr.length; i++) {<br/>
+                  let sorted = arr[i].toLowerCase().split("").sort().join("");<br/>
+                  obj[sorted] = arr[i];<br/>
+                }<br/>
+                return Object.values(obj);<br/>
+              }
+            </p>
+            <p>
+              <b>Мы хотели бы получить массив ключей map.keys() в переменную и далее работать с ними, например, применить метод .push. Но это не выходит:</b>
+              <br><br>
+              let map = new Map();<br/>
+              map.set("name", "John");<br/>
+              let keys = map.keys();<br/>
+              // Error: keys.push is not a function<br/>
+              // Ошибка: keys.push -- это не функция<br/>
+              keys.push("more");
+            </p>
+            <p>
+              <b>Нам нужно получить массив, функция написана не верно, правильный вариант:</b><br/><br>
+              let keys = Array.from(map.keys());
+            </p>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>WeakMap и WeakSet, глава 5.8</b>
+            </p>
+            <p>
+              <b>Есть массив сообщений:У вас есть к ним доступ, но управление этим массивом происходит где-то ещё. Добавляются новые сообщения и удаляются старые, и вы не знаете в какой момент это может произойти. Имея такую вводную информацию, решите, какую структуру данных вы могли бы использовать для ответа на вопрос «было ли сообщение прочитано?». Структура должна быть подходящей, чтобы можно было однозначно сказать, было ли прочитано это сообщение для каждого объекта сообщения.</b><br/>
+            </p>
+            <p>
+              <b>WeakSet</b> - служит в качестве дополнительного хранилища. Но не для произвольных данных, а скорее для значений типа «да/нет».<br/> Воспользуемся этим методом через:<b>let messege = new WeakSet();</b><br/>
+            </p>
+            <p>
+              <b>Теперь вопрос стоит так: какую структуру данных вы бы предложили использовать для хранения информации о том, когда сообщение было прочитано?</b>
+            </p>
+            <p>
+              Метод WeakMap, а именно: через <b>weakMap.set(key, value)</b>
+              <b>let read = new WeakMap();
+                read.set(messages[1], new Date(2023, 02, 26));</b>
+            </p>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Object.keys, values, entries, глава 5.9</b>
+            </p>
+            <p>
+              <b>Есть объект salaries с произвольным количеством свойств, содержащих заработные платы. Напишите функцию sumSalaries(salaries), которая возвращает сумму всех зарплат с помощью метода Object.values и цикла for..of. Если объект salaries пуст, то результат должен быть 0.</b><br/>
+            </p>
+            <p>
+              const sumSalaries = (salaries) = > {<br/>
+                return Object.values(salaries).reduce((sum, elem) => sum + elem, 0)<br/>
+              }
+            </p>
+            <p>
+              <b>Напишите функцию count(obj), которая возвращает количество свойств объекта:</b>
+            </p>
+            <p>
+              const count = (obj) => { return Object.keys(obj).length;}
+            </p>
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Деструктурирующее присваивание, глава 5.10</b>
+            </p>
+            <p>
+              <b>У нас есть объект:</b><br/>
+              let user = {<br/>
+                name: "John",<br/>
+                years: 30<br/>
+              };<br/>
+              Напишите деструктурирующее присваивание, которое:
+            </p>
+            <ol>
+              <li>свойство name присвоит в переменную name</li>
+              <li>свойство years присвоит в переменную age</li>
+              <li>свойство isAdmin присвоит в переменную isAdmin (false, если нет такого свойства)</li>
+            </ol>
+            <br/>
+            <p>
+              Отсутствие пробелов, перенос строк не в нужных местах, длинные строки.
+            </p>
+            <p>
+              <b>let {name, years: age, isAdmin = false} = user;</b>
+            </p>
+            <p>
+              <b>У нас есть объект salaries с зарплатами:</b>
+              let salaries = {<br/>
+                "John": 100,<br/>
+                "Pete": 300,<br/>
+                "Mary": 250<br/>
+              };<br/><br/>
+              Создайте функцию topSalary(salaries), которая возвращает имя самого высокооплачиваемого сотрудника.
+            </p>
+            <p>
+              const topSalary = (salaries) => {<br/>
+                let maxSalary = 0;<br/>
+                let firstName = null;<br/><br/>
+                for(const [name, salary] of Object.entries(salaries)) {<br/>
+                  if (maxSalary &lt salary) {<br/>
+                    maxSalary = salary;<br/>
+                    firstName = name;<br/>
+                  }<br/>
+                }<br/>
+                return firstName;<br/>
+              }<br/>
+            </p>
+          </div>
+
+          
+
+          <div class="block">
+            <p>
+              <b>Дата и время, глава 5.11</b>
+            </p>
+            <div class="block1">
+              <div>
+                <p>
+                  <b>Создайте объект Date для даты: 20 февраля 2012 года, 3 часа 12 минут. Временная зона – местная. Для вывода используйте alert.</b><br/>
+                </p>
+                <p>
+                  let data = new Date(2012, 1, 20, 3, 12);
+                </p>
+                <p>
+                  <b>Напишите функцию getWeekDay(date), показывающую день недели в коротком формате: «ПН», «ВТ», «СР», «ЧТ», «ПТ», «СБ», «ВС».</b>
+                </p>
+                <p>
+                  const getWeekDay = (date) => {<br/>
+                    let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];<br/>
+                    return days[date.getDay()];<br/>
+                  }
+                </p>
+                <p>
+                  <b>В Европейских странах неделя начинается с понедельника (день номер 1), затем идёт вторник (номер 2) и так до воскресенья (номер 7). Напишите функцию getLocalDay(date), которая возвращает «европейский» день недели для даты date.</b>
+                </p>
+                <p>
+                  function getLocalDay(date) {<br/>
+                    let day = date.getDay();<br/>
+                    if (day == 0) {<br/>
+                      day = 7;<br/>
+                    }<br/>
+                    return day;<br/>
+                  }
+                </p>
+                <p>
+                  <b>Создайте функцию getDateAgo(date, days), возвращающую число, которое было days дней назад от даты date. К примеру, если сегодня двадцатое число, то getDateAgo(new Date(), 1) вернёт девятнадцатое и getDateAgo(new Date(), 2) – восемнадцатое.</b>
+                </p>
+                <p>
+                  function getDateAgo(date, days) {<br/>
+                    let newDate = new Date(date);<br/>
+                    newDate.setDate(newDate.getDate() - days)<br/>
+                    return newDate.getDate();<br/>
+                }
+                </p>
+              </div>
+              <div>
+                <p>
+                  <b>Напишите функцию getLastDayOfMonth(year, month), возвращающую последнее число месяца. Иногда это 30, 31 или даже февральские 28/29. Параметры:<br/>
+                    
+                    year – год из четырёх цифр, например, 2012.<br/>
+                    month – месяц от 0 до 11.</b>
+                </p>
+                <p>
+                  function getLastDayOfMonth(year, month) {<br/>
+                    let date = new Date(year, month + 1, 0);<br/>
+                    return date.getDate();<br/>
+                  }
+                </p>
+                <p>
+                  <b>Напишите функцию getSecondsToday(), возвращающую количество секунд с начала сегодняшнего дня.</b>
+                </p>
+                <p>
+                  function getSecondsToday() {<br/>
+                    let d = new Date();<br/>
+                    return d.getHours() * 3600 + d.getMinutes() * 60 + d.getSeconds();<br/>
+                  }
+                </p>
+                <p>
+                  <b>Создайте функцию getSecondsToTomorrow(), возвращающую количество секунд до завтрашней даты.</b>
+                </p>
+                <p>
+                  function getSecondsToTomorrow() {<br/>
+                    let now = new Date();<br/>
+                    let hour = now.getHours();<br/>
+                    let minutes = now.getMinutes();<br/>
+                    let seconds = now.getSeconds();<br/>
+                    let totalSecondsToday = (hour * 60 + minutes) * 60 + seconds;<br/>
+                    let totalSecondsInADay = 86400;<br/>
+                    return totalSecondsInADay - totalSecondsToday;<br/>
+                  }
+                </p>
+                <p>
+                  <b>Напишите функцию formatDate(date), форматирующую date по следующему принципу:</b>
+                </p>
+                <ol>
+                  <li>Если спустя date прошло менее 1 секунды, вывести "прямо сейчас".</li>
+                  <li>В противном случае, если с date прошло меньше 1 минуты, вывести "n сек. назад".</li>
+                  <li>В противном случае, если меньше часа, вывести "m мин. назад".</li>
+                  <li>В противном случае, полная дата в формате "DD.MM.YY HH:mm". А именно: "день.месяц.год часы:минуты", всё в виде двух цифр, т.е. 31.12.16 10:00.</li>
+                </ol>
+                <br/>
+                <p>
+                  function formatDate(date) {<br/>
+                    let dayOfMonth = date.getDate();<br/>
+                    let month = date.getMonth() + 1;<br/>
+                    let year = date.getFullYear();<br/>
+                    let hour = date.getHours();<br/>
+                    let minutes = date.getMinutes();<br/>
+                    let ms = new Date() - date;<br/>
+                    let sec = Math.round(ms / 1000);<br/>
+                    let min = sec / 60;<br/>
+                    let hours = min / 60;<br/><br/>
+                  
+                    year = year.toString().slice(-2);<br/>
+                    month = month &lt 10 ? '0' + month : month;<br/>
+                    dayOfMonth = dayOfMonth &lt 10 ? '0' + dayOfMonth : dayOfMonth;<br/>
+                    hour = hour &lt 10 ? '0' + hour : hour;<br/>
+                    minutes = minutes &lt 10 ? '0' + minutes : minutes;<br/><br/>
+                  
+                    if (sec &lt 1) {<br/>
+                      return 'прямо сейчас';<br/>
+                    } else if (Min &lt 1) {<br/>
+                      return `${sec} сек. назад`<br/>
+                    } else if (hours &lt 1) {<br/>
+                      return `${Min} мин. назад`<br/>
+                    } else {<br/>
+                      return `${dayOfMonth}.${month}.${year} ${hour}:${minutes}`<br/>
+                    }<br/>
+                  }
+                </p>
+              </div>
+            </div>
+            
+            
+          </div>
+
+          <div class="block">
+            <p>
+              <b>Формат JSON, метод toJSON, глава 5.12</b>
+            </p>
+            <p>
+              <b>Преобразуйте user в JSON, затем прочитайте этот JSON в другую переменную.</b><br/>
+              let user = {<br/>
+                name: "Василий Иванович",<br/>
+                age: 35<br/>
+              };
+            </p>
+            <p>
+              let newuser = JSON.parse(JSON.stringify(user));
+            </p>
+            <p>
+              <b>В простых случаях циклических ссылок мы можем исключить свойство, из-за которого они возникают, из сериализации по его имени. Но иногда мы не можем использовать имя, так как могут быть и другие, нужные, свойства с этим именем во вложенных объектах. Поэтому можно проверять свойство по значению. Напишите функцию replacer для JSON-преобразования, которая удалит свойства, ссылающиеся на meetup</b>
+            </p>
+            <p>
+              alert( JSON.stringify(meetup, function replacer(key, value) {<br/>
+                return (key != "" && value == meetup) ? undefined : value;<br/>
+              }));
+            </p>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- <script>alert("Я JavaScript!")</script> -->
+  <script src="/2_basic_Js/2_1_alert.js"></script>
+  <script src="/2_basic_Js/2_4_variables.js"></script>
+  <script src="/2_basic_Js/2_5_dataTypes.js"></script>
+  <script src="/2_basic_Js/2_6_alertPromptConfirm.js"></script>
+  <script src="/2_basic_Js/2_8_math.js"></script>
+  <script src="/2_basic_Js/2_9_comparisonOperators.js"></script>
+  <script src="/2_basic_Js/2_10_if.js"></script>
+  <script src="/2_basic_Js/2_11_logicalOperators.js"></script>
+  <script src="/2_basic_Js/2_13_whileFor.js"></script>
+  <!-- <script src="/2_basic_Js/2_14_switch.js"></script> -->
+  <script src="/2_basic_Js/2_15_function.js"></script>
+  <!-- <script src="/2_basic_Js/2_17_arrowFunctions.js"></script> -->
+  <script src="/4_object/4_1_object.js"></script>
+  <script src="/4_object/4_4_this.js"></script>
+  <script src="/4_object/4_5_new.js"></script>
+  <script src="/5_dataTypes/5_1_primitiveMethods.js"></script>
+  <script src="/5_dataTypes/5_2_num.js"></script>
+  <script src="/5_dataTypes/5_4_arr.js"></script>
+  <script src="/5_dataTypes/5_5_arrMethods.js"></script>
+</body>
+</html>
